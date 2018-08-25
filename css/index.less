@@ -681,9 +681,37 @@ html,body{
     z-index: 10;
     width: .44rem;
     height: .44rem;
-    background: url(../img/music-icon.png) no-repeat;
+    background: url("@{url}/music-icon.png") no-repeat;
     background-size: 100% 100%;
 }
 .music.move{
     .animation(@name:musicMove,@count:infinite);
   }
+
+
+  /* arrow */
+.arrow{
+    position: absolute;
+    right: 0;
+    top: 1.35rem;
+    width: 1.5rem;
+    height: .33rem;
+    z-index: 100;
+    span{
+        display: inline-block;
+        width: .29rem;
+        height: .33rem;
+        background: url("@{url}/row.png") no-repeat;
+        background-size: 100% 100%;
+        &:nth-child(1){
+            .animation(@name:zoomIn,@count:infinite);
+        }
+        &:nth-child(2){
+            .animation(@name:zoomIn,@delay:.2s,@count:infinite);
+        }
+        &:nth-child(3){
+            .animation(@name:zoomIn,@delay:.4s,@count:infinite);
+        }
+    }
+  }
+  
