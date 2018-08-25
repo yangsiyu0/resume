@@ -1,0 +1,10 @@
+@color:#484848,#f0ded5,#3e5b7e,#7f98ba;
+@url:"../img";
+.transition(@property:all,@duration:1s,@function:linear){
+    -webkit-transition: @arguments;
+    transition: @arguments;
+}
+.animation(@name:shake,@duration:1s,@function:linear,@delay:0s,@count:1,@state:both){
+    -webkit-animation: @arguments;
+    animation: @arguments;
+}
