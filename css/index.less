@@ -7,14 +7,12 @@ html,body{
     height: 100%;
     font-family: "\5FAE\8F6F\96C5\9ED1",Helvetica,sans-serif;
 }
-.main{
-    width: 100%;
-    height: 100%; 
-}
-.swiper,.swiper-container,.swiper-slide{
+
+.main,.swiper,.swiper-container,.swiper-slide{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 /*page0*/
 .page0{
@@ -231,13 +229,17 @@ html,body{
             font-size: .3rem;
         }
     }
-    .detail{
+   .con{
+       position: absolute;
+       left: 50%;
+       top: 3.21rem;
+       margin-left: -2.27rem;
+       width: 4.54rem;
+       height: 7.66rem;
+       .detail{
         opacity: 0;
         box-sizing: border-box;
-        position: absolute;
-        top: 3.21rem;
-        left: 50%;
-        margin-left: -2.27rem;
+       
         width: 4.54rem;
         height: 3.77rem;
         padding: .2rem;
@@ -332,6 +334,7 @@ html,body{
             line-height: 180%;
         }
     }
+   }
     .quoteDown{
         &:extend(.page0 .quoteDown);
         bottom: .4rem;
@@ -464,7 +467,7 @@ html,body{
         margin-left: -2.4rem;
     }
     .two{
-        bottom: 1.2rem;
+        top: 6.8rem;
         left: 50%;
         margin-left: -2.4rem;
     }
