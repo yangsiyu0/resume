@@ -1,0 +1,597 @@
+html {
+  font-size: 100px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+}
+.main,
+.swiper,
+.swiper-container,
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*page0*/
+.page0 {
+  display: block;
+  background: #7f98ba;
+}
+.page0 .bg,
+.page1 .bg,
+.page2 .bg,
+.page3 .bg,
+.page4 .bg {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/loadBg.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.page0 .bg2,
+.page1 .bg2,
+.page2 .bg2,
+.page3 .bg2,
+.page4 .bg2 {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6.38rem;
+  height: 7.06rem;
+  background: url("../img/triangle3.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page0 .leftBg,
+.page1 .leftBg,
+.page2 .leftBg,
+.page3 .leftBg,
+.page4 .leftBg {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  width: 2.38rem;
+  height: 1.87rem;
+  background: url("../img/triangle.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page0 .rightBg,
+.page1 .rightBg,
+.page2 .rightBg,
+.page3 .rightBg,
+.page4 .rightBg {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.48rem;
+  height: 5.18rem;
+  background: url("../img/triangle2.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page0 .quote,
+.page1 .quote,
+.page2 .quote,
+.page3 .quote,
+.page4 .quote {
+  position: absolute;
+  top: 1.35rem;
+  left: 0.4rem;
+  width: 3.15rem;
+  height: 1.51rem;
+}
+.page0 .quote p,
+.page1 .quote p span,
+.page2 .quote p span,
+.page3 .quote p span,
+.page4 .quote p span {
+  opacity: 0;
+  width: 0.72rem;
+  height: 0.62rem;
+  background: url("../img/quoteUp.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page0 .quote h3,
+.page1 .quote h3,
+.page2 .quote h3,
+.page3 .quote h3,
+.page4 .quote h3 {
+  opacity: 0;
+  color: #484848;
+  font-size: 0.72rem;
+}
+.page0 .con {
+  opacity: 0;
+  position: absolute;
+  top: 3.2rem;
+  left: 50%;
+  margin-left: -1.74rem;
+  width: 3.48rem;
+  height: 5.59rem;
+  background: #f0ded5;
+  color: #3e5b7e;
+}
+.page0 .con .border {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -2.66rem 0 0 -1.625rem;
+  width: 3.25rem;
+  height: 5.32rem;
+  background: url("../img/border.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page0 .con .work {
+  position: absolute;
+  top: 1rem;
+  left: -0.8rem;
+  font-size: 0.6rem;
+}
+.page0 .con h1 {
+  position: absolute;
+  top: 1.98rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.72rem;
+}
+.page0 .con .name {
+  position: absolute;
+  top: 50%;
+  left: 0.37rem;
+  margin-top: 0.97rem;
+  font-size: 0.24rem;
+  color: #7f98ba;
+}
+.page0 .con .name span {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.6rem;
+}
+.page0 .quoteDown,
+.page1 .quoteDown,
+.page2 .quoteDown,
+.page3 .quoteDown,
+.page4 .quoteDown {
+  opacity: 0;
+  position: absolute;
+  bottom: 2.2rem;
+  right: 0.42rem;
+  width: 0.9rem;
+  height: 0.76rem;
+  background: url("../img/quoteDown.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page0 .progress {
+  position: absolute;
+  bottom: 1.14rem;
+  left: 50%;
+  margin-left: -2.15rem;
+  width: 4.3rem;
+  height: 0.26rem;
+  background: #3e5b7e;
+  border-radius: 0.1rem;
+}
+.page0 .progress .progressBox {
+  width: 0%;
+  height: 100%;
+  background: -webkit-linear-gradient(45deg, #3e5b7e 25%, #587396 25%, #587396 50%, #3e5b7e 50%, #3e5b7e 75%, #587396 75%);
+  background-size: 0.3rem 0.3rem;
+  border-radius: 0.1rem;
+  -webkit-animation: loadingMove 1s linear 0s infinite both;
+  animation: loadingMove 1s linear 0s infinite both;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+#page0 .bg,
+#page1 .bg,
+#page2 .bg,
+#page3 .bg,
+#page4 .bg {
+  -webkit-animation: bounceInDown 1s linear 0s 1 both;
+  animation: bounceInDown 1s linear 0s 1 both;
+}
+#page0 .bg2,
+#page1 .bg2,
+#page2 .bg2,
+#page3 .bg2,
+#page4 .bg2 {
+  -webkit-animation: bounceInLeft 1s linear 0s 1 both;
+  animation: bounceInLeft 1s linear 0s 1 both;
+}
+#page0 .leftBg,
+#page1 .leftBg,
+#page2 .leftBg,
+#page3 .leftBg,
+#page4 .leftBg {
+  -webkit-animation: bounceInRight 1s linear 0.2s 1 both;
+  animation: bounceInRight 1s linear 0.2s 1 both;
+}
+#page0 .rightBg,
+#page1 .rightBg,
+#page2 .rightBg,
+#page3 .rightBg,
+#page4 .rightBg {
+  -webkit-animation: bounceInLeft 1s linear 0.4s 1 both;
+  animation: bounceInLeft 1s linear 0.4s 1 both;
+}
+#page0 .quote p,
+#page1 .quote p span,
+#page2 .quote p span,
+#page3 .quote p span,
+#page4 .quote p span {
+  -webkit-animation: bounceInDown 1s linear 0.5s 1 both;
+  animation: bounceInDown 1s linear 0.5s 1 both;
+}
+#page0 .quote h3,
+#page1 .quote h3,
+#page2 .quote h3,
+#page3 .quote h3,
+#page4 .quote h3 {
+  -webkit-animation: bounceInRight 1s linear 0.7s 1 both;
+  animation: bounceInRight 1s linear 0.7s 1 both;
+}
+#page0 .con {
+  -webkit-animation: bounceInRight 1s linear 0.8s 1 both;
+  animation: bounceInRight 1s linear 0.8s 1 both;
+}
+#page0 .con .border {
+  -webkit-animation: zoomIn 1s linear 0.8s 1 both;
+  animation: zoomIn 1s linear 0.8s 1 both;
+}
+#page0 .con .work {
+  -webkit-animation: bounceInRight 1s linear 0.9s 1 both;
+  animation: bounceInRight 1s linear 0.9s 1 both;
+}
+#page0 .con h1 {
+  -webkit-animation: bounceInLeft 1s linear 1s 1 both;
+  animation: bounceInLeft 1s linear 1s 1 both;
+}
+#page0 .con .name {
+  -webkit-animation: bounceInUp 1s linear 1.2s 1 both;
+  animation: bounceInUp 1s linear 1.2s 1 both;
+}
+#page0 .quoteDown {
+  -webkit-animation: bounceInRight 1s linear 1.4s 1 both;
+  animation: bounceInRight 1s linear 1.4s 1 both;
+}
+/*page1*/
+.page1 .quote p {
+  font-size: 0.48rem;
+}
+.page1 .quote p span {
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+.page1 .quote h3 {
+  opacity: 0;
+  width: 2.5rem;
+  height: 0.44rem;
+  background: #f0ded5;
+  text-align: center;
+  font-size: 0.3rem;
+}
+.page1 .con {
+  position: absolute;
+  left: 50%;
+  top: 3.21rem;
+  margin-left: -2.27rem;
+  width: 4.54rem;
+  height: 7.66rem;
+}
+.page1 .con .detail {
+  opacity: 0;
+  box-sizing: border-box;
+  width: 4.54rem;
+  height: 3.77rem;
+  padding: 0.2rem;
+  background: #f0ded5;
+}
+.page1 .con .detail li {
+  float: left;
+  width: 2rem;
+  height: 0.35rem;
+  font-size: 0.24rem;
+  margin-bottom: 0.15rem;
+}
+.page1 .con .detail li em {
+  display: inline-block;
+  width: 0.13rem;
+  height: 0.19rem;
+  margin-right: 0.15rem;
+}
+.page1 .con .detail li:nth-child(1) em {
+  background: url("../img/person.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .con .detail li:nth-child(3) em {
+  background: url("../img/person.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .con .detail li:nth-child(6) em {
+  background: url("../img/person.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .con .detail li:nth-child(2) em {
+  background: url("../img/home.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .con .detail li:nth-child(4) em {
+  background: url("../img/home.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .con .detail li:nth-child(5) em {
+  background: url("../img/sex.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .con .detail li:nth-child(7) {
+  position: absolute;
+  left: 50%;
+  top: 2.17rem;
+  margin-left: -1.75rem;
+  width: 3.5rem;
+  height: 0.5rem;
+}
+.page1 .con .detail li:nth-child(7) em {
+  width: 0.26rem;
+  height: 0.12rem;
+  background: url("../img/mail.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .con .detail li:nth-child(8) {
+  position: absolute;
+  left: 50%;
+  top: 2.55rem;
+  margin-left: -1.75rem;
+  width: 3.5rem;
+  height: 0.5rem;
+}
+.page1 .con .detail li:nth-child(8) em {
+  width: 0.27rem;
+  height: 0.27rem;
+  background: url("../img/tel.png") no-repeat;
+  background-size: 100% 100%;
+}
+.page1 .con .evalution {
+  opacity: 0;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  margin-left: -3rem;
+  width: 6rem;
+  height: 4.14rem;
+  padding: 0.2rem;
+  background: rgba(255, 255, 255, 0.7);
+}
+.page1 .con .evalution p:nth-child(1) {
+  color: #7f98ba;
+  font-size: 0.36rem;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #f0ded5;
+}
+.page1 .con .evalution p:nth-child(2) {
+  color: #484848;
+  font-size: 0.18rem;
+  line-height: 180%;
+}
+.page1 .quoteDown {
+  bottom: 0.4rem;
+}
+#page1 .detail {
+  -webkit-animation: zoomIn 1s linear 0.3s 1 both;
+  animation: zoomIn 1s linear 0.3s 1 both;
+}
+#page1 .detail li:nth-child(1) {
+  -webkit-animation: bounceInRight 1s linear 0.4s 1 both;
+  animation: bounceInRight 1s linear 0.4s 1 both;
+}
+#page1 .detail li:nth-child(3) {
+  -webkit-animation: bounceInRight 1s linear 0.6s 1 both;
+  animation: bounceInRight 1s linear 0.6s 1 both;
+}
+#page1 .detail li:nth-child(5) {
+  -webkit-animation: bounceInRight 1s linear 0.8s 1 both;
+  animation: bounceInRight 1s linear 0.8s 1 both;
+}
+#page1 .detail li:nth-child(7) {
+  -webkit-animation: bounceInRight 1s linear 0.9s 1 both;
+  animation: bounceInRight 1s linear 0.9s 1 both;
+}
+#page1 .detail li:nth-child(2) {
+  -webkit-animation: bounceInLeft 1s linear 0.5s 1 both;
+  animation: bounceInLeft 1s linear 0.5s 1 both;
+}
+#page1 .detail li:nth-child(4) {
+  -webkit-animation: bounceInLeft 1s linear 0.6s 1 both;
+  animation: bounceInLeft 1s linear 0.6s 1 both;
+}
+#page1 .detail li:nth-child(6) {
+  -webkit-animation: bounceInLeft 1s linear 0.7s 1 both;
+  animation: bounceInLeft 1s linear 0.7s 1 both;
+}
+#page1 .detail li:nth-child(8) {
+  -webkit-animation: bounceInLeft 1s linear 1s 1 both;
+  animation: bounceInLeft 1s linear 1s 1 both;
+}
+#page1 .evalution {
+  -webkit-animation: bounceInLeft 1s linear 1s 1 both;
+  animation: bounceInLeft 1s linear 1s 1 both;
+}
+#page1 .evalution p:nth-child(1) {
+  -webkit-animation: zoomIn 1s linear 1.2s 1 both;
+  animation: zoomIn 1s linear 1.2s 1 both;
+}
+#page1 .evalution p:nth-child(2) {
+  -webkit-animation: bounceInUp 1s linear 1.3s 1 both;
+  animation: bounceInUp 1s linear 1.3s 1 both;
+}
+#page1 .quoteDown {
+  -webkit-animation: bounceInDown 1s linear 1.4s 1 both;
+  animation: bounceInDown 1s linear 1.4s 1 both;
+}
+.page2 .quote p,
+.page3 .quote p,
+.page4 .quote p {
+  width: 3.5rem;
+  font-size: 0.48rem;
+}
+.page2 .quote p span,
+.page3 .quote p span,
+.page4 .quote p span {
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+.page2 .quote h3,
+.page3 .quote h3,
+.page4 .quote h3 {
+  opacity: 0;
+  width: 2.3rem;
+  height: 0.44rem;
+  background: #f0ded5;
+  text-align: center;
+  font-size: 0.3rem;
+}
+.page2 .experience,
+.page3 .experience {
+  opacity: 0;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 0.2rem;
+  width: 4.8rem;
+  height: 3.1rem;
+  background: #f0ded5;
+}
+.page2 .experience p:nth-child(1),
+.page3 .experience p:nth-child(1) {
+  font-size: 0.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.page2 .experience p:nth-child(1) span {
+  margin-right: 0.2rem;
+}
+.page2 .experience p:nth-child(2),
+.page3 .experience p:nth-child(2) {
+  font-size: 0.18rem;
+  line-height: 180%;
+}
+.page2 .one,
+.page3 .one {
+  top: 3.6rem;
+  left: 50%;
+  margin-left: -2.4rem;
+}
+.page2 .two,
+.page3 .two {
+  top: 6.8rem;
+  left: 50%;
+  margin-left: -2.4rem;
+}
+.page2 .quoteDown {
+  bottom: 0.8rem;
+}
+#page2 .one {
+  -webkit-animation: bounceInLeft 1s linear 0.6s 1 both;
+  animation: bounceInLeft 1s linear 0.6s 1 both;
+}
+#page2 .two {
+  -webkit-animation: bounceInRight 1s linear 0.7s 1 both;
+  animation: bounceInRight 1s linear 0.7s 1 both;
+}
+#page2 .quoteDown {
+  -webkit-animation: bounceInDown 1s linear 0.8s 1 both;
+  animation: bounceInDown 1s linear 0.8s 1 both;
+}
+.page3 .quoteDown {
+  bottom: 0.8rem;
+}
+#page3 .one {
+  -webkit-animation: bounceInLeft 1s linear 0.6s 1 both;
+  animation: bounceInLeft 1s linear 0.6s 1 both;
+}
+#page3 .two {
+  -webkit-animation: bounceInRight 1s linear 0.7s 1 both;
+  animation: bounceInRight 1s linear 0.7s 1 both;
+}
+#page3 .quoteDown {
+  -webkit-animation: bounceInDown 1s linear 0.8s 1 both;
+  animation: bounceInDown 1s linear 0.8s 1 both;
+}
+.page4 .contact {
+  opacity: 0;
+  position: absolute;
+  top: 3.99rem;
+  left: 50%;
+  margin-left: -1.54rem;
+  width: 3.08rem;
+  height: 3.6rem;
+  text-align: center;
+}
+.page4 .contact img {
+  width: 2.66rem;
+  height: 2.67rem;
+  margin-bottom: 0.8rem;
+}
+.page4 .contact p {
+  font-size: 0.38rem;
+  color: #ddb197;
+}
+#page4 .contact {
+  -webkit-animation: bounceInDown 1s linear 0.6s 1 both;
+  animation: bounceInDown 1s linear 0.6s 1 both;
+}
+#page4 .quoteDown {
+  -webkit-animation: bounceInDown 1s linear 0.8s 1 both;
+  animation: bounceInDown 1s linear 0.8s 1 both;
+}
+/*music*/
+.music {
+  display: none;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  z-index: 10;
+  width: 0.44rem;
+  height: 0.44rem;
+  background: url("../img/music-icon.png") no-repeat;
+  background-size: 100% 100%;
+}
+.music.move {
+  -webkit-animation: musicMove 1s linear 0s infinite both;
+  animation: musicMove 1s linear 0s infinite both;
+}
+/* arrow */
+.arrow {
+  position: absolute;
+  right: 0;
+  top: 1.35rem;
+  width: 1.5rem;
+  height: 0.33rem;
+  z-index: 100;
+}
+.arrow span {
+  display: inline-block;
+  width: 0.29rem;
+  height: 0.33rem;
+  background: url("../img/row.png") no-repeat;
+  background-size: 100% 100%;
+}
+.arrow span:nth-child(1) {
+  -webkit-animation: zoomIn 1s linear 0s infinite both;
+  animation: zoomIn 1s linear 0s infinite both;
+}
+.arrow span:nth-child(2) {
+  -webkit-animation: zoomIn 1s linear 0.2s infinite both;
+  animation: zoomIn 1s linear 0.2s infinite both;
+}
+.arrow span:nth-child(3) {
+  -webkit-animation: zoomIn 1s linear 0.4s infinite both;
+  animation: zoomIn 1s linear 0.4s infinite both;
+}
